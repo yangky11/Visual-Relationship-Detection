@@ -22,14 +22,6 @@ load('data/UnionCNNfeaPredicate.mat')
 % the CNN score on union of the boundingboxes of the two participating objects in that relationship. 
 % we provide our scores (VGG based) here, but you can re-train a new model.
 
-load('data/objectDetRCNN.mat');
-% object detection results. The scores are mapped into [0,1]. 
-% we provide detected object (RCCN with VGG) here, but you can use a better model (e.g. ResNet).
-% three items: 
-% detection_labels{k}: object category index in k^{th} testing image.
-% detection_bboxes{k}: detected object bounding boxes in k^{th} testing image. 
-% detection_confs{k}: confident score vector in k^{th} testing image. 
-
 load('data/Wb.mat');
 % W and b in Eq. (2) in [1]
 
